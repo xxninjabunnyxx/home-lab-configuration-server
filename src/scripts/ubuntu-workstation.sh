@@ -1,8 +1,6 @@
 sudo apt-get update
 
-sudo apt-get install -y python3 python3-pip git gnome-tweaks yes
-
-sudo pip install ansible
+sudo apt-get install -y git gnome-tweaks yes avahi-daemon avahi-discover avahi-utils libnss-mdns mdns-scan
 
 cd ~
 git clone https://github.com/Jannomag/Yaru-Colors.git
