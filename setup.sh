@@ -12,8 +12,6 @@ sudo apt-get install python3.6
 
 pip install ansible
 
-pm2 startup
-
 npm i
 
-echo Run ---- "pm2 start ./index.js --watch && pm2 save"\n
+pm2 startup
