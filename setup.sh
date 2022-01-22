@@ -14,4 +14,6 @@ pip install ansible
 
 pm2 startup
 
-echo Run "pm2 start ./dist/server.js --watch && pm2 save"\n
+npm i
+
+echo Run ---- "pm2 start ./index.js --watch && pm2 save"\n
