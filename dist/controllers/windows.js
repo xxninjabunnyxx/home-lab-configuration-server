@@ -11,11 +11,8 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = require("express");
 const fs_1 = require("fs");
-const ubuntu = (0, express_1.Router)();
-ubuntu.get("/workstation", (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
-    res.send(yield fs_1.promises.readFile("./src/scripts/ubuntu-workstation.sh", "utf-8"));
+const windows = (0, express_1.Router)();
+windows.get("/workstation", (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
+    res.send(yield fs_1.promises.readFile("./src/scripts/windows-workstation.ps1", "utf-8"));
 }));
-ubuntu.get("/server", (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
-    res.send(yield fs_1.promises.readFile("./src/scripts/ubuntu-server.sh", "utf-8"));
-}));
-exports.default = ubuntu;
+exports.default = windows;
