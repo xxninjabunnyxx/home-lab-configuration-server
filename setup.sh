@@ -14,6 +14,6 @@ sudo adduser ansible
 
 pip install ansible
 
-pm2 startup
+npm i
 
-echo Run "pm2 start ./dist/server.js --watch && pm2 save"\n
+pm2 startup
