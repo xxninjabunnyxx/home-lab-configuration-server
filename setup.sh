@@ -1,18 +1,13 @@
 #!/bin/bash
+curl -fsSL https://deb.nodesource.com/setup_17.x | sudo -E bash -
+
 sudo apt update
 
-sudo apt-get install avahi-daemon avahi-discover avahi-utils libnss-mdns mdns-scan ssh sshpass
-
-curl -fsSL https://deb.nodesource.com/setup_17.x | sudo -E bash -
-sudo apt-get install -y nodejs
+sudo apt-get install -y avahi-daemon avahi-discover avahi-utils libnss-mdns mdns-scan ssh sshpass python3 python3-pip nodejs
 
 sudo npm install -g pm2
 
-sudo apt-get install python3.6
-
-sudo adduser ansible
-
-pip install ansible
+pip3 install ansible
 
 npm i
 
